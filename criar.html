@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Atividade SOLID - Criar</title>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="index.php">Listar Tarefas</a></li>
+                    <li><a href="" class="ativo">Criar Tarefa</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+
+            <div>
+                <h2 class="titulo">Crie uma Nova Tarefa</h2>
+
+                <form action="tarefa-controler.php?acao=inserir" method="GET">
+
+                    <label for="descricao">Descrição:</label>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+
+                    <input type="submit" id="" value="Criar" class="botao criar">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
